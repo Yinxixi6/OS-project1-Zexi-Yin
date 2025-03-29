@@ -23,9 +23,9 @@ It works on the same SharedBuffer struct (defined in both producer and consumer)
 
 It consumes up to 6 items that the producer adds.
 
-# example output:![Screenshot_20250328_221625](https://github.com/user-attachments/assets/6abe91ba-2a2b-4e1d-b771-719b6e3acb10)
+# Example output:![Screenshot_20250328_221625](https://github.com/user-attachments/assets/6abe91ba-2a2b-4e1d-b771-719b6e3acb10)
 
-# compilation
+# Compilation
 I used c++ to finish this project, the environment is Linux, use following commends to complie:
 
 g++ producer.cpp -pthread -lrt -o producer
