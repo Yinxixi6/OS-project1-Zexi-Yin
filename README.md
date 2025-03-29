@@ -23,7 +23,7 @@ It works on the same SharedBuffer struct (defined in both producer and consumer)
 
 It consumes up to 6 items that the producer adds.
 
-# Example output:![Screenshot_20250328_221625](https://github.com/user-attachments/assets/6abe91ba-2a2b-4e1d-b771-719b6e3acb10)
+# Example output: ![Screenshot_20250328_230058](https://github.com/user-attachments/assets/130ae570-2d63-450e-a867-da95e2b8b1e9)
 
 # Compilation
 I used c++ to finish this project, the environment is Linux, use following commends to complie:
