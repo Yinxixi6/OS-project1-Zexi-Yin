@@ -48,14 +48,14 @@ int main() {
         buffer->index--;
         int item = buffer->buffer[buffer->index];
 
-        std::cout << "Consumer Buffer State: ";
+        std::cout << "[Consumer] Buffer: ";
         for (int j = 0; j < 2; ++j) {
             std::cout << buffer->buffer[j] << " ";
         }
         std::cout << std::endl;
 
         buffer->buffer[buffer->index] = 0;
-        std::cout << "Consumer: " << item << std::endl;
+        std::cout << "[Consumer] Consumed: " << item << std::endl;
 
         sem_post(&buffer->empty);
         sem_post(&buffer->mutex);
