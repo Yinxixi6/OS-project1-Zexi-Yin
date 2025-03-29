@@ -56,7 +56,7 @@ int main() {
 
     std::srand(std::time(nullptr));
 
-// Main production loop (produce 6 items)
+// Main production loop
     for (int i = 0; i < 6; ++i) {
         sem_wait(&buffer->empty);
         sem_wait(&buffer->mutex);
@@ -64,7 +64,7 @@ int main() {
         int value = rand() % 100;
         buffer->buffer[buffer->index] = value;
 
-        std::cout << "Producer: " << value << std::endl;
+        std::cout << "[Producer] Produced: " << value << std::endl;
         buffer->index++;
 
         sem_post(&buffer->mutex);
