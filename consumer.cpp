@@ -40,7 +40,7 @@ int main() {
         return EXIT_FAILURE;
     }
 
-// Main consumer loop (consume 6 items)
+// Main consumer loop
     for (int i = 0; i < 6; ++i) {
         sem_wait(&buffer->full);
         sem_wait(&buffer->mutex);
